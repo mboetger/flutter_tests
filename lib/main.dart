@@ -1,4 +1,4 @@
-import 'dart:ffi' show DynamicLibrary
+import 'dart:ffi' show DynamicLibrary;
 import 'package:flutter/material.dart';
 
 void main() {
