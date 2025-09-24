@@ -21,9 +21,6 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-
-
-
   final String title;
 
   @override
@@ -34,6 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
+    final DynamicLibrary genKeyLib = DynamicLibrary.open('aes256_lib.so');
+    print(genKeyLib);
     setState(() {
       _counter++;
     });
